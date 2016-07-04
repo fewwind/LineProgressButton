@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.lineprogressbutton.fewwind.myapplication.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.lineprogressbutton.fewwind.myapplication.LineProgressButton
+        android:id="@+id/id_line_progerss_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        app:bg_loading_state_first="@android:color/darker_gray"
+        app:bg_loading_state_seconed="@android:color/holo_blue_bright"
+        app:bg_nromal_state="@android:color/holo_red_light"
+        app:text_color="@android:color/white"
+        app:text_content_pre="下载"
+        app:text_size="18sp"></com.lineprogressbutton.fewwind.myapplication.LineProgressButton>
+</RelativeLayout>

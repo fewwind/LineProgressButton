@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--带进度的button-->
+    <declare-styleable name="CustomLineProgressBar">
+        <!--正常状态下vew的背景-->
+        <attr name="bg_nromal_state" format="color"></attr>
+        <!--下载过程中未下载部分的背景-->
+        <attr name="bg_loading_state_first" format="color"></attr>
+        <!--下载过程中已下载的颜色-->
+        <attr name="bg_loading_state_seconed" format="color"></attr>
+        <!--中间文本的颜色-->
+        <attr name="text_color" format="color"></attr>
+        <!--中间文本的大小-->
+        <attr name="text_size" format="dimension"></attr>
+        <!--中间文本未下载显示文字-->
+        <attr name="text_content_pre" format="string"></attr>
+
+    </declare-styleable>
+</resources>
