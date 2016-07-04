@@ -17,7 +17,12 @@ app:text_color="@android:color/white"
 app:text_content_pre="下载"    
 app:text_size="18sp">
 </com.lineprogressbutton.fewwind.myapplication.LineProgressButton>```
+
+
+
+
 ### 支持的基本属性
+
     <!--带进度的button-->
     <declare-styleable name="CustomLineProgressBar">
         <!--正常状态下vew的背景-->
