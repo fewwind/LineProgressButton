@@ -2,7 +2,7 @@
 
 ![Screencast_2016-07-04-18-13-39.mp4_1467627442.gif](http://upload-images.jianshu.io/upload_images/767626-facc9474578dfb82.gif?imageMogr2/auto-orient/strip)
 ### 基本用法，布局文件添加自定义view
-```
+`
 <com.lineprogressbutton.fewwind.myapplication.LineProgressButton
 android:id="@+id/id_line_progerss_bar"    
 android:layout_width="match_parent"    
@@ -16,10 +16,7 @@ app:bg_nromal_state="@android:color/holo_red_light"
 app:text_color="@android:color/white"    
 app:text_content_pre="下载"    
 app:text_size="18sp">
-</com.lineprogressbutton.fewwind.myapplication.LineProgressButton>```
-
-
-
+</com.lineprogressbutton.fewwind.myapplication.LineProgressButton>
 
 ### 支持的基本属性
 
