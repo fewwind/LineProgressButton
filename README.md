@@ -2,7 +2,7 @@
 
 ![Screencast_2016-07-04-18-13-39.mp4_1467627442.gif](http://upload-images.jianshu.io/upload_images/767626-facc9474578dfb82.gif?imageMogr2/auto-orient/strip)
 ### 基本用法，布局文件添加自定义view
-`
+```
 <com.lineprogressbutton.fewwind.myapplication.LineProgressButton
 android:id="@+id/id_line_progerss_bar"    
 android:layout_width="match_parent"    
@@ -17,7 +17,7 @@ app:text_color="@android:color/white"
 app:text_content_pre="下载"    
 app:text_size="18sp">
 </com.lineprogressbutton.fewwind.myapplication.LineProgressButton>
-
+```
 ### 支持的基本属性
 
     <!--带进度的button-->
@@ -36,3 +36,22 @@ app:text_size="18sp">
         <attr name="text_content_pre" format="string"></attr>
 
     </declare-styleable>
+
+### 基本用法
+```
+    Runnable loadTask = new Runnable() {
+        @Override
+        public void run() {
+
+            if (i <= 1.0) {
+                mLineProgressBar.postDelayed(loadTask, 200);
+                i += 0.02f;
+                mLineProgressBar.setPrecent(i,"下载中 "+(int) (i * 100) + "%");
+            } else{
+                mLineProgressBar.setContext("下载完成");
+
+            }
+        }
+    };
+
+```
