@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void learnGit() {
+    public void learnGit2() {
 
     }
 }
