@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     LineProgressButton mLineProgressBar;
     private float i = 0.0f;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                    .setAction("Action", null).show();
             }
         });
         mLineProgressBar = (LineProgressButton) findViewById(R.id.id_line_progerss_bar);
@@ -47,13 +49,14 @@ public class MainActivity extends AppCompatActivity {
             if (i <= 1.0) {
                 mLineProgressBar.postDelayed(loadTask, 200);
                 i += 0.05f;
-                mLineProgressBar.setPrecent(i,"下载中 "+(int) (i * 100) + "%");
-            } else{
+                mLineProgressBar.setPrecent(i, "下载中 " + (int) (i * 100) + "%");
+            } else {
                 mLineProgressBar.setContext("下载完成");
 
             }
         }
     };
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -75,5 +79,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void learnGit() {
+
     }
 }
